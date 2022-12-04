@@ -1,5 +1,3 @@
-# read file into array, separate out by spaces, add the rest and find max
-
 perElfArray = []
 localTotal = 0
 currentMax = 0
