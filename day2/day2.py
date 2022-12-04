@@ -15,9 +15,9 @@ def score(line):
   def resultScore():
     if a == 'A':
       if b == 'Y':
-        return 0
-      elif b == 'Z':
         return 6
+      elif b == 'Z':
+        return 0
       else:
         return 3
     elif a == 'B':
