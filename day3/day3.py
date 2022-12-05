@@ -1,9 +1,3 @@
-# get list of stuff, read one line at a time
-# cut each line in half to get first and second compartments
-# find the common letters
-# find the priorities, store in list
-# sum the priorities
-
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 prioritiesDict = {}
 priorityList = []
