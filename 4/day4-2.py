@@ -11,16 +11,14 @@ def parseLine(line):
     for i in range(c, d):
       if i == a or i == b:
         counted = True
+        break
   else:
     for i in range(a, b):
       if i == c or i == d:
         counted = True
+        break
   if counted:
     count += 1
-  # elif first[1] <= second[1] and (first[0] <= second[1] and second[0] >= first[0]):
-  #   count += 1  
-  # elif second[1] <= first[1] and (second[0] <= first[1] and first[0] >= second[0]):
-  #   count += 1
 
 count = 0
 file = open('input.txt', 'r')
