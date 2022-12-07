@@ -15,7 +15,6 @@ def parseLines(lines):
   first = dict.fromkeys(lines[0])
   second = dict.fromkeys(lines[1])
   third = dict.fromkeys(lines[2])
-  print(first, second, third)
   commonKeys = first.items() & second.items() & third.items()
   for i in commonKeys:
     letter = i[0]
@@ -32,7 +31,6 @@ groups = []
 j = 1
 for line in file:
   groups.append(line)
-  print(line)
   if j % 3 == 0:
     parseLines(groups)
     groups = []
