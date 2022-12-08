@@ -35,10 +35,11 @@ def parseMoves(line):
   limit = int(splitLine[1])
   from_index = int(splitLine[3]) - 1
   to_index = int(splitLine[5]) - 1
-  while limit > 0:
-    ele = stacks[from_index].pop()
+  to_limit = len(stacks[from_index]) - limit
+  substack = stacks[from_index][to_limit::]
+  stacks[from_index] = stacks[from_index][0: to_limit]
+  for ele in substack:
     stacks[to_index].append(ele)
-    limit -= 1
   return
 
 def parseLine(line):
