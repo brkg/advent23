@@ -7,7 +7,7 @@ def is_unique(array):
 def parseLine(line):
   global queue, count
   for x in line:
-    if len(queue) == 4:
+    if len(queue) == 14:
       if is_unique(queue):
         print(count)
         return
